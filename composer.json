@@ -1,0 +1,32 @@
+{
+    "name": "jfuentestgn/cache-url-downloader",
+    "description": "URL Downloader with optional cache",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juan Fuentes",
+            "email": "jfuentestgna@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "php": ">=7.0.1"
+    },
+    "require-dev": {
+        "laravel/framework": "5.3.*",
+        "phpunit/phpunit": "~5.0",
+        "orchestra/testbench": "~3.0",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "JFuentesTgn\\CacheUrlDownloader\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    }
+}
