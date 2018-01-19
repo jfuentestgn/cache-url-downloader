@@ -28,5 +28,6 @@
         "classmap": [
             "tests/TestCase.php"
         ]
-    }
+    },
+    "minimum-stability": "dev"
 }
