@@ -33,7 +33,9 @@ class CacheUrlDownloader implements UrlDownloader
         }
 
         $response = $this->delegate->downloadUrl($url);
-        $this->cachePut($hash, $response);
+        if ($response->getStatusCode() == 200) {
+            $this->cachePut($hash, $response);
+        }
 
         return $response;
     }
